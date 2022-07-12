@@ -3,6 +3,8 @@ package com.iot.a20220712_customlistview;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,5 +32,13 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         adapter.notifyDataSetChanged();
+
+        Button button = (Button)findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
