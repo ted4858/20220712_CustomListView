@@ -51,7 +51,7 @@ public class KatalkAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        Log.i(TAG,"getView calld");
+        Log.i(TAG,"getView called position : " + position);
         if (convertView==null) {
             Log.i(TAG,"getView: convertView==null");
             LayoutInflater inflater = activity.getLayoutInflater();
